@@ -141,9 +141,9 @@
 	})
 
 	document.querySelector('.box').addEventListener('click',function(){
-		document.querySelector('.box img').classList.toggle('show');
+		document.querySelector('.box img').classList.toggle('show1');
 		setTimeout(function(){
-			document.querySelector('.box img').classList.remove('show');
+			document.querySelector('.box img').classList.remove('show1');
 		},3000);
 	});
 	let showMenu=false
@@ -151,7 +151,7 @@ var aboutbtn=document.querySelector('#aboutbtn');
 var name=document.querySelector('#name');
 var option=document.querySelector('.option');
 var menu=document.querySelector('.mid');
-var items=document.querySelector('.mid .menu .item a');
+
 
 option.addEventListener('click',toggleMenu);
 
@@ -160,20 +160,11 @@ option.addEventListener('click',toggleMenu);
     option.classList.add('close');
     menu.classList.add('show');
 
-    // menuNav.classList.add('show');
-    // menuBranding.classList.add('show');
-    // navItems.forEach(item => item.classList.add('show'));
-
-    // Set Menu State
     showMenu = true;
   } else {
     option.classList.remove('close');
     menu.classList.remove('show');
-    // menuNav.classList.remove('show');
-    // menuBranding.classList.remove('show');
-    // navItems.forEach(item => item.classList.remove('show'));
-
-    // Set Menu State
+    
     showMenu = false;
   }
 }
