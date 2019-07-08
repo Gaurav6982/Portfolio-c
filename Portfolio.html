@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PORTFOLIO</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="navbar.css">
+<link rel="stylesheet" type="text/css" href="css/accord.css">
+<link rel="stylesheet" type="text/css" href="l-style.css">
+<body>
+	<div class="navbar">
+		<div class="option">
+			<div class="bars">
+				<div class="bar" id="one"></div>
+				<div class="bar" id="two"></div>
+				<div class="bar" id="three"></div>
+			</div>
+		</div>
+		<ul class="outmenu">
+			<li><a href="index.html" id="aboutbtn">ABOUT ME</a>
+				<ul class="inmenu">
+					<li><a href="#">RESUME</a></li>
+					<li><a href="#">BIODATA</a></li>
+					<li><a href="#">WHERE YOU HAVE BEEN</a></li>
+					<li><a href="#">BOOKS YOU HAVE READ</a></li>
+				</ul>
+			</li>
+			<li><a href="photos.html" target="#">PHOTOS</a></li>
+			<li><a href="Portfolio.html" class="active">PORTFOLIO</a></li>
+			<!-- <li><a href="#">CONTACT ME</a></li> -->
+			<li><a href="#">HIRE ME</a></li>
+		</ul>
+	</div>
+
+	<section>
+		<div class="container">
+			<div class="skills">
+				<h1>SKILLS</h1>
+				<ul>
+					<li>Programming</li>
+					<li>Database Management(Mysql)</li>
+					<li>Web Development</li>
+					
+				</ul>
+			</div>
+			<div class="programming">
+				<h1>PROGRAMMING LANGUAGES KNOWN</h1>
+				<ul>
+					<li>Java</li>
+					<li>C Language</li>
+					<li>Python</li>
+					
+				</ul>
+			</div>
+			<div class="projects">
+				<h1>PROJECTS MADE</h1>
+				<ul>
+					<li>Quiz App(Android)</li>
+					<li>Online Auction(Java And Mysql)</li>
+					<li>Chemist Shop(Java And Mysql)</li>
+					<li>Portfolio(Web)</li>
+					<li>Memory Game(Web)</li>
+					<li>Dice Game(Web)</li>
+					<li>Rock Paper Scissor Game(Web)</li>
+					<li>Weather Forecast(Web)</li>
+				</ul>
+			</div>
+			<div class="prize">
+				<h1>PRIZES AND COMPETITION WON</h1>
+				<ul>
+					<li>Class XI<sub>th</sub> - II<sub>nd</sub>Rank Trophy</li>
+					<li>Class XII<sub>th</sub> - I<sub>st</sub> Rank Trophy</li>
+					<li>City Rank 2nd Medal for Class 12th based competition.</li>
+					
+				</ul>
+			</div>
+			<div class="extra">
+				<h1>EXTRA-CURRICULER ACTIVITIES</h1>
+				<ul>
+					
+						
+						<li>Gyming</li>
+						<li>Outdoor Sports-Football, Cricket, Badminton</li>
+						<li>Competitive Coding</li>
+						<li>What I do in Free Time</li>
+						<ul style="margin: 0 40px;padding: 0;">
+							<li>Learn Through Youtube</li>
+							<li>Explore on Google</li>
+							<li>Gaming</li>
+							<li>Photography</li>
+							<li>Listening Music</li>
+						</ul>
+					
+				</ul>
+			</div>
+		</div>
+	</section>
+	<footer>
+		
+	</footer>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+	var zero=0;
+	$(document).ready(function(){
+		$(window).scrollTop(0);
+		$(window).on('scroll',function(){
+			$('.navbar').toggleClass('hide',$(window).scrollTop()>zero);
+			zero=$(window).scrollTop();
+		})
+
+	})
+</script>
+</html>

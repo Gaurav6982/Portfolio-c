@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PHOTOS</title>
+</head>
+<link rel="stylesheet" type="text/css" href="p-style.css">
+<link rel="stylesheet" type="text/css" href="navbar.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/accord.css">
+ --><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<body>
+	<div class="navbar">
+		<div class="option">
+			<div class="bars">
+				<div class="bar" id="one"></div>
+				<div class="bar" id="two"></div>
+				<div class="bar" id="three"></div>
+			</div>
+		</div>
+		<ul class="outmenu">
+			<li><a href="index.html" id="aboutbtn">ABOUT ME</a>
+				<ul class="inmenu">
+					<li><a href="#">RESUME</a></li>
+					<li><a href="#">BIODATA</a></li>
+					<li><a href="#">WHERE YOU HAVE BEEN</a></li>
+					<li><a href="#">BOOKS YOU HAVE READ</a></li>
+				</ul>
+			</li>
+			<li><a href="photos.html" class="active"target="#">PHOTOS</a></li>
+			<li><a href="Portfolio.html">PORTFOLIO</a></li>
+			<!-- <li><a href="#">CONTACT ME</a></li> -->
+			<li><a href="#">HIRE ME</a></li>
+		</ul>
+	</div>
+	<div class="mid">
+			<h1 id="title">GALLERY</h1>
+			<div class="back">
+					<a href="index.html">
+					<i class="fas fa-arrow-alt-circle-left"></i></a>
+				</div>
+		</div>
+	<section>
+		
+		
+		<div class="container">
+			<div class="box">
+				<div class="imgbox">
+					<img src="img/photos/img1.jpg">
+				</div>
+				<div class="details">
+					<h1>AAKASH INSTITUITE</h1>
+					<p>It was the Result Day of JEE MAINS and the end days with all the friends and fun as my result was not so good......one of the days when it felt that i am not good in studies.</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgbox">
+					<img src="img/photos/img2.jpg">
+				</div>
+				<div class="details">
+					<h1>COACHING FRIENDS AT HOME</h1>
+					<p>It is the other day after result when we were planning to go somewhere and enjoy to get rid of feeling of failure.</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgbox">
+					<img src="img/photos/img3.jpg">
+				</div>
+				<div class="details">
+					<h1>SCHOOL FAREWELL</h1>
+					<p>It was the Farewell Day and some of the memories with some of my friends.</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgbox">
+					<img src="img/photos/img4.jpg">
+				</div>
+				<div class="details">
+					<h1>SCHOOL FRIEND</h1>
+					<p>It is also the pic from That Day.....and He is One of my Friend who is still there whenever we plan to meetup.</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgbox">
+					<img src="img/photos/img5.jpg">
+				</div>
+				<div class="details">
+					<h1>CLASS TEACHER AND FRIENDS</h1>
+					<p>Here is another pic from the day and she was my Class Teacher in class 12<sup>th</sup> and some of my friends from the same Class.</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgbox">
+					<img src="img/photos/img6.jpg">
+				</div>
+				<div class="details">
+					<h1>AT KFC</h1>
+					<p>IT IS FINGER LICKIN GOOD.</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgbox">
+					<img src="img/photos/img7.jpg">
+				</div>
+				<div class="details">
+					<h1>ROOM-MATES</h1>
+					<p>Family Members for the span of 4 years of Btech.</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgbox">
+					<img src="img/photos/img8.jpg">
+				</div>
+				<div class="details">
+					<h1>HOSTEL-FRIENDS</h1>
+					<p>Some More family members from another Room of Hostel.</p>
+				</div>
+			</div>
+
+		</div>
+		
+	</section>
+	
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+	setTimeout(function(){
+
+		document.querySelector('#title').style.height='60px';
+		$('#title').addClass('move');		
+	
+	},1200);
+	
+	var zero=0;
+	$(document).ready(function(){
+		$(window).scrollTop(0);
+		$(window).on('scroll',function(){
+			$('.navbar').toggleClass('hide',$(window).scrollTop()>zero);
+			zero=$(window).scrollTop();
+		})
+
+	})
+
+	document.querySelector('.box').addEventListener('click',function(){
+		document.querySelector('.box img').classList.toggle('show');
+		setTimeout(function(){
+			document.querySelector('.box img').classList.remove('show');
+		},3000);
+	});
+	let showMenu=false
+var aboutbtn=document.querySelector('#aboutbtn');
+var name=document.querySelector('#name');
+var option=document.querySelector('.option');
+var menu=document.querySelector('.mid');
+var items=document.querySelector('.mid .menu .item a');
+
+option.addEventListener('click',toggleMenu);
+
+	function toggleMenu() {
+  if (!showMenu) {
+    option.classList.add('close');
+    menu.classList.add('show');
+
+    // menuNav.classList.add('show');
+    // menuBranding.classList.add('show');
+    // navItems.forEach(item => item.classList.add('show'));
+
+    // Set Menu State
+    showMenu = true;
+  } else {
+    option.classList.remove('close');
+    menu.classList.remove('show');
+    // menuNav.classList.remove('show');
+    // menuBranding.classList.remove('show');
+    // navItems.forEach(item => item.classList.remove('show'));
+
+    // Set Menu State
+    showMenu = false;
+  }
+}
+
+	
+</script>
+<script src="https://kit.fontawesome.com/a90f4d5ab7.js"></script>
+</html>
