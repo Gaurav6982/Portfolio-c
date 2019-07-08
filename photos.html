@@ -3,10 +3,11 @@
 <head>
 	<title>PHOTOS</title>
 </head>
+<link rel="stylesheet" type="text/css" href="css/accord.css">
 <link rel="stylesheet" type="text/css" href="p-style.css">
 <link rel="stylesheet" type="text/css" href="navbar.css">
-<!-- <link rel="stylesheet" type="text/css" href="css/accord.css">
- --><meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <body>
 	<div class="navbar">
 		<div class="option">
@@ -30,6 +31,36 @@
 			<!-- <li><a href="#">CONTACT ME</a></li> -->
 			<li><a href="#">HIRE ME</a></li>
 		</ul>
+
+		<div class="mid">
+			<div class="menu">
+				<li class="item" id="abbtn">
+					<a href="#abbtn" class="btn">ABOUT</a>
+					<div class="smenu">
+						<a href="#about" id="newabout">ABOUT ME</a>
+						<a href="#">RESUME</a>
+						<a href="#">BIODATA</a>
+						<a href="#">WHERE YOU HAVE BEEN</a>
+						<a href="#">BOOKS YOU HAVE READ</a>
+					</div>
+					
+				</li>
+
+				<li class="item" id="photos">
+					<a href="photos.html" class="btn">PHOTOS</a>
+				</li>
+
+				<li class="item" id="portfolio">
+					<a href="Portfolio.html" class="btn">PORTFOLIO</a>
+				</li>
+
+				<li class="item" id="hire">
+					<a href="#hire" class="btn">HIRE ME</a>
+				</li>
+			</div>		
+		</div>
+	</div>
+ 
 	</div>
 	<div class="midhead">
 			<h1 id="title">GALLERY</h1>
@@ -146,30 +177,25 @@
 			document.querySelector('.box img').classList.remove('show1');
 		},3000);
 	});
-	let showMenu=false
-var aboutbtn=document.querySelector('#aboutbtn');
-var name=document.querySelector('#name');
-var option=document.querySelector('.option');
-var menu=document.querySelector('.mid');
-
-
-option.addEventListener('click',toggleMenu);
+	
+</script>
+<script type="text/javascript">
+	let showMenu=false;
+	document.querySelector('.option').addEventListener('click',toggleMenu);
 
 	function toggleMenu() {
   if (!showMenu) {
-    option.classList.add('close');
-    menu.classList.add('show');
+    document.querySelector('.option').classList.add('close');
+    document.querySelector('.mid').classList.add('show');
 
     showMenu = true;
   } else {
-    option.classList.remove('close');
-    menu.classList.remove('show');
-    
+    document.querySelector('.option').classList.remove('close');
+   document.querySelector('.mid').classList.remove('show');
+  
     showMenu = false;
   }
 }
-
-	
 </script>
 <script src="https://kit.fontawesome.com/a90f4d5ab7.js"></script>
 </html>
