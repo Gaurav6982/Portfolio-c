@@ -8,7 +8,6 @@
 .mid{
 	position: absolute;
 	width: 100%;
-	border: 2px solid black;
 	top: 60px;
 	z-index:11111111111111111111111111111;
 }
