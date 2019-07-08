@@ -1,6 +1,7 @@
 *{
 	margin: 0;
 padding: 0;
+/*border: 2px solid black;*/
 }
 
 body{
@@ -115,7 +116,7 @@ section{
 .container .box:hover .imgbox img{
 	transform: scale(1.2);
 }
-.imgbox img.show1{
+.box img.show1{
 	transform: scale(1.2);
 }
 .details{
@@ -144,6 +145,7 @@ section{
 	transform: scaleY(1);
 	
 }
+
 @media screen and (max-width:1250px ){
 	
 	.container{
