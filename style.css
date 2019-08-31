@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
+
+.text{
+	position: relative;
+}
 body{
 	background: url(img/back1.jpg);
 	background-size: cover;
@@ -124,26 +128,48 @@ section{
 	width: 100%;
 	box-sizing: border-box;	
 }
+
 .content .img img{
 	height: 100%;
 	width: 100%;
+	border-radius: 50%;
 }
 .content .img{
-	position: absolute;
-	top: 1%;
-	right: 8%;
-	margin-right: 0;
-	width: 20%;
-	height: 40%;
+	position: relative;
+	float: right;
+	height: 200px;
+	width: 170px;
+	border-radius: 50%;
+	
+	shape-outside: ellipse();
+	margin: 5px;
 	box-shadow: 5px 10px #718093;
 	border: 2px solid #7f8fa6;
 }
-.half{
+
+.img::before{
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	right: -2px;
+	bottom: -2px;
+	background: rgba(255,255,255);
+	z-index: -1;
+	border-radius: 50%;
+	transform: skew(10deg,10deg);
+	background: linear-gradient(to right,red,yellow);
+	animation: rot 5s linear infinite;
 	
-	width: 70%;
 }
-.full{
-	width: 95%;
+
+@keyframes rot{
+	0%{
+		transform: rotateZ(0deg);
+	}
+	100%{
+		transform: rotateZ(360deg);
+	}
 }
 
 .banner p{
