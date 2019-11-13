@@ -1,0 +1,81 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+section{
+	height:auto;
+	width: 100%;
+	background:url(../img/back4.jpg);
+	background-size: cover;
+}
+.container{
+	position: relative;
+	margin-top: 80px;
+}
+.container h1{
+	color: #ecf0f1;
+	font-size: 30px;
+	text-align: center;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	border:2px black solid;
+	transition: all 0.5s;
+	background: linear-gradient(to right,#fbc531,#00a8ff,#9c88ff,#8c7ae6,#9c88ff,#00a8ff,#fbc531);
+	/*animation-name: move;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;*/
+}
+/*@keyframes move{
+	0%{
+		background: linear-gradient(to right,#fbc531,#00a8ff,#9c88ff,#8c7ae6,#8c7ae6,#9c88ff,#00a8ff,#fbc531);
+	}
+	100%{
+		background: linear-gradient(to right,);
+	}
+}*/
+
+.container ul{
+	padding: 40px;
+
+}
+.container ul li{
+	font-size: 25px;
+	color: #dcdde1;
+	line-height: 50px;
+}
+
+
+footer{
+	height: 20px;
+	background-color: #34495e;
+}
+
+@media screen and (max-width: 700px) {
+	.container h1{
+		font-size: 20px;
+	}
+	.container ul li{
+		list-style-type: square;
+		font-size: 15px;
+		line-height: 20px;
+
+	}
+	.container ul{
+		padding: 10px 40px;
+	}
+	.container{
+		margin-top: 60px;
+	}
+
+}
+@media screen and (max-width: 465px){
+	
+	.container h1{
+		font-size: 15px;
+	}
+	.container ul li{
+		list-style-type: disc;
+		font-size: 10px;
+	}
+}

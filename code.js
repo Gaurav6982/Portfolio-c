@@ -46,7 +46,6 @@ option.addEventListener('click',toggleMenu);
   if (!showMenu) {
     option.classList.add('close');
     menu.classList.add('show');
-
     // menuNav.classList.add('show');
     // menuBranding.classList.add('show');
     // navItems.forEach(item => item.classList.add('show'));
